@@ -10,7 +10,7 @@ class QuestionsController < ApplicationController
     if @question == "I am going to work".downcase
       @answer = "Great!"
     elsif @question.end_with?("?")
-      "Silly question, get dressed and go to work!"
+      @answer = "Silly question, get dressed and go to work!"
     else
       @answer = "I don't care, get dressed and go to work!"
     end
